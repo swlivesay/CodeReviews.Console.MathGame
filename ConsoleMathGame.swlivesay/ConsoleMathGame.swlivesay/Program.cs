@@ -9,9 +9,7 @@
 
 */
 
-using System.Collections;
-
-Random rand = new Random();
+//Random rand = new Random();
 string[,] gameHistory = new string[10, 3];
 
 bool playGame = true;
@@ -129,7 +127,7 @@ void GetNumbers(int start = 1, int end = 13)
 }
 
 // based on game mode selected, ask user a math question. Read user input and result in myAnswer
-int AskMathQuestion(int x, int y, int gameSelection)
+void AskMathQuestion(int x, int y, int gameSelection)
 {
 
     switch (gameSelection)
@@ -169,7 +167,6 @@ int AskMathQuestion(int x, int y, int gameSelection)
     
     readResult = Console.ReadLine();
     int.TryParse(readResult, out myAnswer); 
-    return myAnswer;
 }
 
 
