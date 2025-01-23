@@ -9,7 +9,6 @@
 
 */
 
-//Random rand = new Random();
 string[,] gameHistory = new string[10, 3];
 
 bool playGame = true;
@@ -123,7 +122,6 @@ void GetNumbers(int start = 1, int end = 13)
     Random rand = new Random();
     firstNumber = rand.Next(start, end);
     secondNumber = rand.Next(start, end);
-
 }
 
 // based on game mode selected, ask user a math question. Read user input and result in myAnswer
